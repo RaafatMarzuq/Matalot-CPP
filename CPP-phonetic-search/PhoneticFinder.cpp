@@ -1,9 +1,4 @@
-/*
- *AUTHORS: Omer Katz & Raafat Marzuq
- *
- * Date: 2020-03
- *
- */
+
 #include "PhoneticFinder.hpp"
 #include <iostream>
 #include <ctype.h>
