@@ -213,7 +213,9 @@ string  Tree::get_name(string relation,Node *node)
     {   
 
         string temp ;
-        temp.append(relation.begin()+6,relation.end());
+
+        temp.append(relation.begin()+6,relation.end());//relation.begin()+6 
+                                                        // becuse of the first "great-"
         return get_name(temp,node->dad);
     }
     return "";
@@ -237,6 +239,8 @@ void Tree::remove(string relative)
     
 
 }
+
+
  Node*  Tree::leafDelete(struct Node* root) 
 { 
     if (root == NULL) 
@@ -271,7 +275,7 @@ bool Tree::ifNodeExists( Node* node, string key)
   
     return res2; 
 } 
-
+//took it from geeksforgeeks
 void print2D(Node *root, int space)
 {
     if (root == NULL)

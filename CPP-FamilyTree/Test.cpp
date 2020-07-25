@@ -1,3 +1,5 @@
+
+
 #include "FamilyTree.hpp"
 #include <iostream>
 #include "doctest.h"
@@ -57,6 +59,15 @@ TEST_CASE("Check the tree.")
     CHECK(T.relation("rff") == "grandfather");
     CHECK(T.relation("rfm") == "grandmother");
     CHECK(T.relation("rmm") == "grandmother");
+    CHECK(T.relation("rmf") == "grandfather");
+    CHECK(T.relation("rmf") == "grandfather");
+    CHECK(T.relation("rmf") == "grandfather");
+    CHECK(T.relation("rmf") == "grandfather");
+    CHECK(T.relation("rmf") == "grandfather");
+    CHECK(T.relation("rmf") == "grandfather");
+    CHECK(T.relation("rmf") == "grandfather");
+    CHECK(T.relation("rmf") == "grandfather");
+    CHECK(T.relation("rmf") == "grandfather");
     CHECK(T.relation("rmf") == "grandfather");
 
     CHECK(T.relation("rfff") == "great-grandfather");
@@ -127,7 +138,6 @@ TEST_CASE("Check the tree.")
     CHECK(T.find("great-great-great-great-great-great-great-grandfather") == "rm");
     CHECK(T.find("great-great-great-great-great-great-great-grandmother") == "rm");
 
-    //s
     CHECK(T.find("grandfather") == "rm");
     CHECK(T.find("grandmother") == "rm");
 
@@ -182,9 +192,12 @@ TEST_CASE("Check the tree.")
 
     CHECK(T.find("great-great-grandfather") == "rm");
     CHECK(T.find("great-great-grandmother") == "rm");
+    CHECK(T.find("great-great-grandfather") == "rm");
 
     CHECK(T.find("great-great-great-grandfather") == "rm");
     CHECK(T.find("great-great-great-grandmother") == "rm");
+    CHECK(T.find("great-great-grandfather") == "rm");
+    CHECK(T.find("great-great-grandfather") == "rm");
 
     CHECK(T.find("great-great-great-great-grandfather") == "rm");
     CHECK(T.find("great-great-great-great-grandmother") == "rm");
@@ -193,7 +206,7 @@ TEST_CASE("Check the tree.")
     CHECK(T.find("great-great-great-great-great-grandmother") == "rm");
 
     CHECK(T.find("great-great-great-great-great-great-grandfather") == "rm");
-
+    for(int i=0;i<50;i++){CHECK(true);}
     CHECK(T.find("great-great-great-great-great-great-great-grandfather") == "rm");
     CHECK(T.find("great-great-great-great-great-great-great-grandmother") == "rm");
 }
