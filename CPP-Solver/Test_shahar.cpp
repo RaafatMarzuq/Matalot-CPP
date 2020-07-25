@@ -16,7 +16,7 @@ TEST_CASE("simple equation") {
      CHECK(solve(2*x==0)==0);
      CHECK(solve(8*x==0)==0);
      CHECK(solve(8*x/8==1)==1);
-     CHECK(solve(3*x==90)==20);
+     CHECK(solve(3*x==90)==30);
      CHECK(solve(4*x+10==90)==20);
      CHECK(solve(4*x-10==90)==25);
      CHECK(solve(2*x+5==10)==2.5);
