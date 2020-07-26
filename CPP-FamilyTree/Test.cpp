@@ -1,5 +1,4 @@
 
-
 #include "FamilyTree.hpp"
 #include <iostream>
 #include "doctest.h"

@@ -155,4 +155,6 @@ TEST_CASE("Test replacement ofmore than two letters,also lower-case and upper-ca
     CHECK(find(text, "Pezt") == string("best"));
     CHECK(find(text, "fezT") == string("best"));
     CHECK(find(text, "RICC") == string("rick"));
+
+    
 }
